@@ -1,0 +1,124 @@
+
+
+$CorFundo: #0a0c16;
+$CorTitulo: #f9f9f9f5;
+$CorTexto: #cacaca;
+$Corbotao: #6421ffe5;
+$Corbotao_assineagora: #fc3c36;
+$Corbotao_Entrar: #443f52e8;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+
+@font-face{
+    font-family: 'Avenir';
+    src: url(../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Avenir';
+    src: url(../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+body{
+    background-color: $CorFundo;
+    font-family: 'Aveniar', sans-serif;
+};
+
+@mixin text($fontSize: 16px ) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $CorTexto;
+}
+
+@mixin text--small{
+    @include text(12px);
+}
+
+@mixin text{
+    @include text;
+}
+
+@mixin link__text{
+    @include text;
+    color: $CorTitulo;
+    text-decoration: underline;
+}
+
+@mixin text--big{
+    @include text(18px);
+}
+
+@mixin button__text{
+    @include text(18px);
+    line-height: 18px;
+    color: $CorTitulo;
+}
+
+@mixin text--bigger{
+    @include text(20px);
+    color: $CorTitulo;
+}
+
+// TODOS OS TITULOS
+@mixin title($fontSize: 40px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $CorTitulo
+}
+
+@mixin title--small{
+    @include title(28px);
+}
+
+@mixin title{
+    @include title;
+}
+
+@mixin title--big{
+    @include title(44px);
+}
+
+
+.hero {
+    background-image: url(../images/Hero_star+.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 5.6vw;
+
+    .hero__content {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        max-width: 740px;
+
+        &_brand {
+            width: 185px;
+            height: 55px;
+            margin: 0 auto;
+            margin-bottom: 28px;
+        }
+
+        
+        
+    }
+}
+
+.link__text {
+    margin-bottom: 4px;
+}
+
+.title--small{ 
+    margin-bottom: 25px;
+}
+
+.button__text {
+    margin-bottom: 26px; 
+}   
