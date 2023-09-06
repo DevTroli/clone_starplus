@@ -1,57 +1,57 @@
 @use 'variaveis.scss';
 
 
-// // TODOS OS TEXTOS 
-// @mixin text($fontSize: 16px ) {
-//     font-size: $fontSize;
-//     line-height: $fontSize + 10px;
-//     color: $CorTexto;
-// }
+// TODOS OS TEXTOS 
+@mixin text($fontSize: 16px ) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $CorTexto;
+}
 
-// @mixin text--small{
-//     @include text(12px);
-// }
+@mixin text--small{
+    @include text(12px);
+}
 
-// @mixin text{
-//     @include text;
-// }
+@mixin text{
+    @include text;
+}
 
-// @mixin link__text{
-//     @include text;
-//     color: $CorTitulo;
-//     text-decoration: underline;
-// }
+@mixin link__text{
+    @include text;
+    color: $CorTitulo;
+    text-decoration: underline;
+}
 
-// @mixin text--big{
-//     @include text(18px);
-// }
+@mixin text--big{
+    @include text(18px);
+}
 
-// @mixin button__text{
-//     @include text(18px);
-//     line-height: 18px;
-//     color: $CorTitulo;
-// }
+@mixin button__text{
+    @include text(18px);
+    line-height: 18px;
+    color: $CorTitulo;
+}
 
-// @mixin text--bigger{
-//     @include text(20px);
-//     color: $CorTitulo;
-// }
+@mixin text--bigger{
+    @include text(20px);
+    color: $CorTitulo;
+}
 
-// // TODOS OS TITULOS
-// @mixin title($fontSize: 40px) {
-//     font-size: $fontSize;
-//     line-height: $fontSize + 10px;
-//     color: variaveis.$CorTitulo
-// }
+// TODOS OS TITULOS
+@mixin title($fontSize: 40px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$CorTitulo
+}
 
-// @mixin title--small{
-//     @include title(28px);
-// }
+@mixin title--small{
+    @include title(28px);
+}
 
-// @mixin title{
-//     @include title;
-// }
+@mixin title{
+    @include title;
+}
 
-// @mixin title--big{
-//     @include title(44px);
-// }
+@mixin title--big{
+    @include title(44px);
+}
