@@ -1,5 +1,5 @@
 @use 'variaveis.scss';
-@use 'mixim.scss';
+
 
 .hero{
     background-image: url(../images/Hero_star+.jpg);
@@ -8,35 +8,94 @@
     background-size: cover;
     height: 100vh;
     padding: 5.6vw;
+    
    
      .hero__content{
         display: block;
         justify-content: center;
         align-items: center;
-        max-width: 740px;
+        margin-top: 263px ;
+        margin-bottom: 32px;
+        
+       
+       
+        
 
         &_brand{
             width: 185px;
             height: 55px;
             margin: 0 auto;
-            margin-bottom: 28px ;
+            margin-bottom: 28px;
         }
 
     } 
 
+    
+.title--small{ 
+    margin-bottom: 27px;
+    color: variaveis.$CorTitulo;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 700;
+    
+}
+
+.button__text {
+    font-family: inherit;
+    margin-bottom: 26px; 
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: variaveis.$Corbotao;
+    border: none;
+    color: variaveis.$CorTitulo;
+    font-size: 18px;
+    line-height: 18px;
+    width: 100%;
+    max-height: 100px;
+    max-width: 630px;
+    height: 70px;
+    border-radius: 4px;
+    justify-content: center;
+    text-align: center;
+}   
+
 .link__text {
      margin-bottom: 4px;
+     color: variaveis.$CorTitulo;
+     font-size: 16px;
+     line-height: 26px;
 }
-        
-.title--small{ 
-    margin-bottom: 25px;
-}
-        
-.button__text {
-    margin-bottom: 26px; 
-}   
+
+.hint-down {
+    animation: bounce 1.75s infinite;
+    animation-duration: 1.75s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    border: none;
+    bottom: 2vw;
+    height: 48px;
+    margin: 0 auto;
+    opacity: 0.65;
+    width: 48px;
+
 
 } 
 
 
+@keyframes bounce {
+    100% {
+      transform: translateY(0px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+    0% {
+      transform: translateY(0px);
+    }
+    
+  }
 
+}
