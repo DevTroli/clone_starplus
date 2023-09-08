@@ -54,6 +54,12 @@
     border: none;
     border-radius: 4px;
     justify-content: center;
+
+    &:hover{
+        background-color: #7134ff;
+        cursor: pointer;
+        scale: 1.01;
+    }
 }   
 
 .link__text {
@@ -61,6 +67,7 @@
      color: variaveis.$CorTitulo;
      font-size: variaveis.$link_textSize;
      line-height: variaveis.$link_textSize + 10px;
+     cursor: pointer;
 }
 
 .hint{
