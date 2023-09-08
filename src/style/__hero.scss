@@ -14,8 +14,8 @@
         display: block;
         justify-content: center;
         align-items: center;
-        margin-top: 263px ;
-        margin-bottom: 32px;
+        margin-top: 259px ;
+        margin-bottom: 39px;
         
        
        
@@ -25,7 +25,7 @@
             width: 185px;
             height: 55px;
             margin: 0 auto;
-            margin-bottom: 28px;
+            margin-bottom: 24px;
         }
 
     } 
@@ -34,56 +34,49 @@
 .title--small{ 
     margin-bottom: 27px;
     color: variaveis.$CorTitulo;
-    font-size: 28px;
-    line-height: 28px;
-    font-weight: 700;
-    
+    font-size: variaveis.$titleSize--small;
+    line-height: variaveis.$titletSize + 10px;
 }
 
 .button__text {
-    font-family: inherit;
-    margin-bottom: 26px; 
-    font-size: 18px;
-    line-height: 18px;
-    text-transform: uppercase;
-    background-color: variaveis.$Corbotao;
-    border: none;
-    color: variaveis.$CorTitulo;
-    font-size: 18px;
-    line-height: 18px;
     width: 100%;
+    height: 70px;
     max-height: 100px;
     max-width: 630px;
-    height: 70px;
+    margin-bottom: 26px; 
+    font-family: inherit;
+    font-size: variaveis.$button_textSize;
+    line-height: variaveis.$button_textSize + 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: variaveis.$CorTitulo;
+    background-color: variaveis.$Corbotao;
+    border: none;
     border-radius: 4px;
     justify-content: center;
-    text-align: center;
 }   
 
 .link__text {
      margin-bottom: 4px;
      color: variaveis.$CorTitulo;
-     font-size: 16px;
-     line-height: 26px;
+     font-size: variaveis.$link_textSize;
+     line-height: variaveis.$link_textSize + 10px;
 }
 
-.hint-down {
-    animation: bounce 1.75s infinite;
-    animation-duration: 1.75s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-play-state: running;
+.hint{
+  cursor: pointer;
+  margin-top: 8px ;
+  &-down {
+    animation: bounce 1.75s infinite ease-in-out alternate;
     border: none;
     bottom: 2vw;
     height: 48px;
     margin: 0 auto;
     opacity: 0.65;
     width: 48px;
-
-
-} 
-
+    color: variaveis.$CorTitulo;
+}
+}
 
 @keyframes bounce {
     100% {
