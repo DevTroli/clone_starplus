@@ -1,36 +1,32 @@
-@use 'variaveis.scss';
+@use "variaveis.scss";
 
-.espn{
-    padding: 5.6vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 24px;
-    
+.espn {
+  padding: 5.6vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 24px;
 
-    img{
-        max-width: 100%;
-    }
-    
-    .espn__text__container{
-        padding: 1vw;
-        text-align: center;
-    }
+  img {
+    max-width: 100%;
+  }
 
-    h2{
-        font-size: variaveis.$titletSize;
-        line-height: variaveis.$titletSize + 10px;
-        color: variaveis.$CorTitulo;
-    }
+  .espn__text__container {
+    padding: 1vw;
+    text-align: center;
+  }
 
+  h2 {
+    font-size: variaveis.$titletSize;
+    line-height: variaveis.$titletSize + 10px;
+    color: variaveis.$CorTitulo;
+  }
 
-    p{
+  p {
     font-size: variaveis.$textSize--big;
     line-height: variaveis.$textSize--big + 10px;
     color: variaveis.$CorTexto;
     text-align: start;
     margin-top: 16px;
-    }
-    
-    }
-
+  }
+}

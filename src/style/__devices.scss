@@ -1,0 +1,47 @@
+@use "variaveis.scss";
+
+.availables_devices {
+  padding: 5.6vw;
+
+  .titleSize {
+    font-size: variaveis.$titletSize;
+    line-height: variaveis.$titletSize + 10px;
+    color: variaveis.$CorTitulo;
+    margin: auto;
+    text-align: center;
+  }
+  
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  
+  &__item {
+    margin-top: 24px;
+    text-align: center;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+
+    li{
+      margin-bottom:2px ;
+      font-size: variaveis.$textSize--big;
+      color: variaveis.$CorTexto;
+      line-height: variaveis.$textSize--big + 10px;
+
+    }
+
+    .titleSize--small {
+      color: variaveis.$CorTitulo;
+      font-size: variaveis.$titleSize--small;
+      line-height: variaveis.$titleSize--small + 10px;
+      margin-bottom: 24px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+}

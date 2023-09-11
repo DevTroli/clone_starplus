@@ -1,7 +1,45 @@
-@use 'variaveis.scss';
+@use "variaveis.scss";
 
-.simpsons{
-    padding: 5.5vw;
-    background-image: url(../images/Simpsons.png);
-        
+.Simpsons {
+  background-image: url(../images/Simpsons.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 5.6vw;
+  height: 70vw;
+  width: 100%;
+  text-align: center;
+
+  &__text__container {
+    align-items: start;
+    margin: 4px 810px 810px 0px;
+    text-align: start;
+    max-width: 640px;
+    width: 100%;
+    height: 640px;
+
+    .titleSize {
+      max-width: 540px;
+      width: 100%;
+      font-size: variaveis.$titletSize;
+      line-height: variaveis.$titletSize + 10px;
+      color: variaveis.$CorTitulo;
+      margin-bottom: 24px;
+    }
+
+    .textSize--bigger {
+      font-size: variaveis.$textSize--bigger;
+      line-height: variaveis.$textSize--bigger + 10px;
+      color: variaveis.$CorTitulo;
+      margin-bottom: 16px;
+    }
+
+    .textSize--small {
+      font-size: variaveis.$textSize--small;
+      line-height: variaveis.$textSize--small + 4px;
+      color: variaveis.$CorTexto;
+      margin-bottom: 16px;
+      padding-top: 0px;
+      text-align: start;
+    }
+  }
 }

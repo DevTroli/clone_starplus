@@ -1,34 +1,36 @@
-@use 'variaveis.scss';
-@use '__planos.scss';
-@use'__hero.scss';
-@use '__espn.scss';
-@use '__destaques.scss';
-@use '__simpsons.scss';
+@use "variaveis.scss";
+@use "__planos.scss";
+@use "__hero.scss";
+@use "__espn.scss";
+@use "__popular.scss";
+@use "__simpsons.scss";
+@use "__devices.scss";
+@use "__FAQ.scss";
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-};
-
-@font-face{
-    font-family: 'Avenir';
-    src: url(../assets/fonts/Avenir-Regular.woff2);
-    font-weight: 400;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@font-face{
-    font-family: 'Avenir';
-    src: url(../assets/fonts/Avenir-Bold.woff2);
-    font-weight: 700;
+@font-face {
+  font-family: "Avenir";
+  src: url(../assets/fonts/Avenir-Regular.woff2);
+  font-weight: 400;
 }
 
-body{
-    background-color: variaveis.$CorFundo;
-    font-family: 'Aveniar', sans-serif;
-    color: variaveis.$CorTitulo;
-};
+@font-face {
+  font-family: "Avenir";
+  src: url(../assets/fonts/Avenir-Bold.woff2);
+  font-weight: 700;
+}
 
+body {
+  background-color: variaveis.$CorFundo;
+  font-family: "Aveniar", sans-serif;
+  color: variaveis.$CorTitulo;
+}
 
-
+li {
+  list-style: none;
+}

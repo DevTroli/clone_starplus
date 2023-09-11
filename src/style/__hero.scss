@@ -1,49 +1,42 @@
-@use 'variaveis.scss';
+@use "variaveis.scss";
 
+.hero {
+  background-image: url(../images/Hero_star+.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: cover;
+  height: auto;
+  padding: 5.8vw;
+  justify-content: center;
 
-.hero{
-    background-image: url(../images/Hero_star+.jpg);
-    background-repeat: no-repeat;
-    text-align: center;
-    background-size: cover;
-    height: 106vh;
-    padding: 5.8vw;
-    justify-content: center;
-   
-    
-    
-   
-     .hero__content{
-        margin: 258px auto 48px auto;
-        width: 100%;
-        max-width:620px;
-        max-height: 280px;
-       
-        &_brand{
-            width: 185px;
-            height: 55px;
-            margin: 0 auto;
-            margin-bottom: 24px;
-        }
+  .hero__content {
+    margin: 258px auto 48px auto;
+    width: 100%;
+    max-width: 620px;
+    max-height: 280px;
 
-    } 
+    &_brand {
+      width: 185px;
+      height: 55px;
+      margin: 0 auto;
+      margin-bottom: 24px;
+    }
+  }
 
-    
-.title--small{ 
-  
+  .title--small {
     color: variaveis.$CorTitulo;
     font-size: variaveis.$titleSize--small;
     line-height: variaveis.$titletSize + 10px;
     margin-bottom: 18px;
-}
+  }
 
-.button__text {
+  .button__text {
     width: 100%;
     height: 70px;
     max-height: 100px;
     max-width: 630px;
     margin-bottom: 24px;
-   
+
     font-family: inherit;
     font-size: variaveis.$button_textSize;
     line-height: variaveis.$button_textSize + 10px;
@@ -55,36 +48,35 @@
     border-radius: 4px;
     justify-content: center;
 
-    &:hover{
-        background-color: #7134ff;
-        cursor: pointer;
-        scale: 1.01;
+    &:hover {
+      background-color: #7134ff;
+      cursor: pointer;
+      scale: 1.01;
     }
-}   
+  }
 
-.link__text {
-     color: variaveis.$CorTitulo;
-     font-size: variaveis.$link_textSize;
-     line-height: variaveis.$link_textSize + 10px;
-     cursor: pointer;
-    }
-
-.hint{
-  cursor: pointer;
-  left: auto;
-
-  &-down {
-    animation: bounce 1.75s infinite ease-in-out alternate;
-    border: none;
-    opacity: 0.65;
+  .link__text {
     color: variaveis.$CorTitulo;
-    height: 32px;
-    width: 32px;
-    
-}
-}
+    font-size: variaveis.$link_textSize;
+    line-height: variaveis.$link_textSize + 10px;
+    cursor: pointer;
+  }
 
-@keyframes bounce {
+  .hint {
+    cursor: pointer;
+    left: auto;
+
+    &-down {
+      animation: bounce 1.75s infinite ease-in-out alternate;
+      border: none;
+      opacity: 0.65;
+      color: variaveis.$CorTitulo;
+      height: 32px;
+      width: 32px;
+    }
+  }
+
+  @keyframes bounce {
     100% {
       transform: translateY(0px);
     }
@@ -94,8 +86,5 @@
     0% {
       transform: translateY(0px);
     }
-    
   }
-
-
 }
