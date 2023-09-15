@@ -1,0 +1,91 @@
+@use "variaveis.scss";
+.footer{
+    padding: 26px 8px;
+    color: variaveis.$CorTexto;
+
+    &__container{
+        max-width: 1024px;
+        max-height: 280px;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto ;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    &__logo{
+        max-height: 90px;
+        max-width: 90px;
+        margin: 0 auto 10px;
+    }
+
+    &__links{
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+            &__item{
+                display: inline-block;
+                margin-bottom: 0;
+                padding: 8px 12px;
+                text-decoration: none;
+                flex-direction: wrap;
+
+                a{
+                    font-size: variaveis.$textSize--small;
+                    line-height: variaveis.$textSize--small + 4px;
+                    text-decoration: none;
+                    color: variaveis.$CorTexto;
+                    display: block;
+
+                    &:hover{
+                        color: variaveis.$CorTitulo;
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+            
+        }
+        
+        p{
+            color: variaveis.$CorTexto;
+            font-size: variaveis.$textSize--small;
+            line-height: variaveis.$textSize--small + 4px;
+            font-size:12px; 
+            line-height: 16px;
+        }
+
+
+}
+.languages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+
+    img{
+    max-height: 16x;
+    max-width: 16px;
+    }
+
+    select{
+    background-color: transparent;
+    border: none;
+    color: variaveis.$CorTexto;
+
+    &:hover{
+        cursor: pointer;
+        color: variaveis.$CorTitulo;
+    }
+    }
+
+    
+
+    option{
+        color: variaveis.$CorFundo;
+    }
+}

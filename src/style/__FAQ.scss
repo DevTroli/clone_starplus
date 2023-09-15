@@ -1,6 +1,67 @@
-.FAQ{
+@use "variaveis.scss";
+
+.faq{
+    margin-top: 16px; 
     padding: 5.6vw;
 
+    &__questions{
+        &__item{
+            background-color: variaveis.$CorBotaoFAQ;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            
+
+            &--is-open{
+                .faq__questions__item__answer{
+                    height: auto;
+                    padding-bottom:16px;
+                    transition: height, .6s ease-out;
+                }
+                
+                .faq__questions__item__question::after{
+                    content: '-' ;
+                    font-size: 40px;
+                }
+            }
+
+            &__question{
+                text-align: inherit;
+                display: block;
+                padding: 24px;
+                ;
+                cursor: pointer;
+                position: relative;
+
+                &::after{
+                    content: "+";
+                    right: 24px;
+                    height: 100%;
+                    top: 0;
+                    color: variaveis.$CorTitulo;
+                    font-size: 40px;
+                    align-items: center;
+                    display: flex;
+                    position: absolute;
+                }
+            }
+
+            &__answer{
+                height: 0;
+                overflow: hidden;
+                padding: 0 24px;
+                transition: height, .5s ease-out;
+                color: variaveis.$CorTexto;
+                white-space: pre-line;
+                letter-spacing: 0.3px;
+                text-align:  left;
+                font-size: variaveis.$textSize--big;
+                line-height: variaveis.$textSize--big + 10px;
+            }
+
+            
+        }
+        
+    }
 
     .titleSize {
         text-align: center;
