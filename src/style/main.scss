@@ -13,6 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 @font-face {
@@ -31,8 +32,4 @@ body {
   background-color: variaveis.$CorFundo;
   font-family: "Aveniar", sans-serif;
   color: variaveis.$CorTitulo;
-}
-
-li {
-  list-style: none;
 }

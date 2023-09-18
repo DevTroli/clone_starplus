@@ -9,8 +9,10 @@
   padding: 5.8vw;
   justify-content: center;
 
+  
+
   .hero__content {
-    margin: 258px auto 48px auto;
+    margin: 248px auto 48px auto;
     width: 100%;
     max-width: 620px;
     max-height: 280px;
@@ -36,6 +38,7 @@
     max-height: 100px;
     max-width: 630px;
     margin-bottom: 24px;
+    margin-top: 2vw;
 
     font-family: inherit;
     font-size: variaveis.$button_textSize;
