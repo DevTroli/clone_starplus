@@ -1,7 +1,7 @@
 @use "variaveis.scss";
 
 .Popular {
-  padding: 5.6vw;
+  padding: 5vw;
   margin: auto;
 }
 
@@ -9,7 +9,7 @@
   font-size: variaveis.$titletSize;
   line-height: variaveis.$titletSize + 10px;
   color: variaveis.$CorTitulo;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .textSize {
@@ -20,6 +20,10 @@
 }
 
 picture {
-  width: 100%;
-  height: auto;
+
+  @media(max-width: 768px) {
+    width: 100%;    
+    height: auto;
+    display: block;
+  }
 }

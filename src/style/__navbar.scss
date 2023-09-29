@@ -4,9 +4,30 @@
   position: sticky;
   top: 0;
   left: 0;
+  background-color: variaveis.$CorFundo;
+  transition: background-color .5s ease;
+  z-index: 1;
+
+  &--is-hidden {
+    background-color: transparent;
+    transition: background-color .5s ease;
+
+    .header{
+      &__brand, &__links__item:first-child {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .5s ease;
+
+      }
+    }
+
+  }
 
   &__container {
-    padding: 10px 36px;
+    padding: 16px 32px;
+    width: 100%;
+    max-height: 70px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -14,7 +35,9 @@
   &__brand {
     max-width: 80px;
     width: 100%;
-    margin: 5px;
+    margin: 4px;
+    margin-left: 24px;
+    transition: opacity .5s ease;
   }
 
   &__links {
@@ -23,6 +46,7 @@
 
     &__item {
       margin: 5px;
+      transition: opacity .5s ease;
 
       .button--primary {
         text-decoration: none;

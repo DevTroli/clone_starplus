@@ -5,15 +5,22 @@
   .titleSize-big {
     text-align: center;
     font-size: variaveis.$titleSize--big;
-    margin-bottom: 18px;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 24px;
   }
 
   &_list {
-    margin-top: 32px;
+    margin-top: 48px;
     display: flex;
     justify-content: space-around;
     list-style: none;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+
+    @media(max-width: 768px) {
+      display: block;
+      flex-direction: column;
+    }
 
     .more_popular {
       background-image: url(../images/fundo_combo+.png);
@@ -88,6 +95,7 @@
   line-height: variaveis.$textSize--small + 4px;
   color: variaveis.$CorTexto;
   text-align: center;
-  padding-top: 48px;
-  margin-bottom: 24px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  letter-spacing: 0.2px;
 }

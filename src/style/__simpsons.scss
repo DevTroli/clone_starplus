@@ -17,6 +17,12 @@
     width: 100%;
     height: 640px;
 
+    @media (max-width: 768px) {
+      position: relative;
+      left: 0;
+      width: 100%;
+    }
+
     .titleSize {
       max-width: 540px;
       width: 100%;

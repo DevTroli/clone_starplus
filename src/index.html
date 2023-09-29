@@ -7,13 +7,13 @@
     <title>Star+ | Esportes Ao vivo com a ESPN, filmes e séries</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header header--is-hidden">
       <div class="header__container">
-        <h1 class="hidden">
+        <h1 id="logo">
         <img class="header__brand" src="./images/logos/starPlus.svg" alt="Star+" />
         </h1>
         <ul class="header__links">
-          <li class="header__links__item hidden">
+          <li class="header__links__item" id="item__primary">
             <a href="#" class="button--primary button ">Assine agora</a>
           </li>
           <li class="header__links__item">
@@ -100,12 +100,9 @@
         esportes ao vivo com a ESPN.
       </p>
       <picture class="more_popular">
-        <img
-          width="1260"
-          height="620"
-          src="./images/maisPopulares.png"
-          alt="Os mais populares Star+"
-      /></picture>
+        <source media="(max-width: 768px)"  srcset="./images/responsividade/maisPopulares_starplus+.jpg" alt="Os mais populares Star+"/>
+        <img src="./images/maisPopulares.png" alt="Os mais populares Star+"/>
+      </picture>
     </section>
     <section class="espn">
       <div class="ESPN__text__container">

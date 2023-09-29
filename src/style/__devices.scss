@@ -10,13 +10,17 @@
     margin: auto;
     text-align: center;
   }
-  
+
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
-  
+
   &__item {
     margin-top: 24px;
     text-align: center;
@@ -24,12 +28,11 @@
     max-width: 370px;
     width: 100%;
 
-    li{
-      margin-bottom:2px ;
+    li {
+      margin-bottom: 2px;
       font-size: variaveis.$textSize--big;
       color: variaveis.$CorTexto;
       line-height: variaveis.$textSize--big + 10px;
-
     }
 
     .titleSize--small {
@@ -43,5 +46,4 @@
       width: 100%;
     }
   }
-
 }

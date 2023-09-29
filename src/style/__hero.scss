@@ -5,23 +5,30 @@
   background-repeat: no-repeat;
   text-align: center;
   background-size: cover;
-  height: auto;
-  padding: 5.8vw;
+  padding: 5.6vw;
   justify-content: center;
+  margin-top: -72px;
+
+  @media (max-width: 768px) {
+    background-image: url(../images/responsividade/hero_mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
   
 
   .hero__content {
-    margin: 248px auto 48px auto;
+    margin: 260px auto 30px auto;
     width: 100%;
     max-width: 620px;
     max-height: 280px;
+    margin-bottom: 48px;
 
     &_brand {
       width: 185px;
       height: 55px;
       margin: 0 auto;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
     }
   }
 
@@ -29,7 +36,7 @@
     color: variaveis.$CorTitulo;
     font-size: variaveis.$titleSize--small;
     line-height: variaveis.$titletSize + 10px;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
   }
 
   .button__text {
@@ -37,8 +44,7 @@
     height: 70px;
     max-height: 100px;
     max-width: 630px;
-    margin-bottom: 24px;
-    margin-top: 2vw;
+    margin-bottom: 16px;
 
     font-family: inherit;
     font-size: variaveis.$button_textSize;
@@ -67,6 +73,8 @@
   .hint {
     cursor: pointer;
     left: auto;
+    padding: 8px;
+    margin-top: 32px;
 
     &-down {
       animation: bounce 1.75s infinite ease-in-out alternate;
@@ -83,7 +91,7 @@
       transform: translateY(0px);
     }
     60% {
-      transform: translateY(-15px);
+      transform: translateY(-10px);
     }
     0% {
       transform: translateY(0px);
