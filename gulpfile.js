@@ -1,10 +1,10 @@
 const gulp = require('gulp');
-const saas = require('gulp-sass')(require('sass'));
+const sass = require('gulp-sass')(require('sass'));
 const uglify = require('gulp-uglify');
 
 function styles() {
     return gulp.src('./style/main.scss')
-        .pipe(saas({
+        .pipe(sass({
             outputStyle: 'compressed'
         }))
         .pipe(gulp.dest('./dist/style'));
@@ -21,10 +21,9 @@ function HTML() {
         .pipe(gulp.dest('./dist'));      
 }
 
-
-  exports.sass = gulp.parallel(styles, scripts, HTML);
-  exports.watch = function() {
-    gulp.watch('./src/style/*.scss', gulp.parallel(styles));
+exports.sass = gulp.parallel(styles, scripts, HTML);
+exports.watch = function() {
+    gulp.watch('./style/*.scss', gulp.parallel(styles));
     gulp.watch('./index.html', gulp.parallel(HTML));
-    gulp.watch('./src/scripts/main.js', gulp.parallel(scripts));
-  };
+    gulp.watch('./scripts/main.js', gulp.parallel(scripts)); 
+};
