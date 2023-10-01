@@ -5,22 +5,21 @@
   top: 0;
   left: 0;
   background-color: variaveis.$CorFundo;
-  transition: background-color .5s ease;
+  transition: background-color 0.5s ease;
   z-index: 1;
 
   &--is-hidden {
     background-color: transparent;
-    transition: background-color .5s ease;
+    transition: background-color 0.5s ease;
 
-    .header{
-      &__brand, &__links__item:first-child {
+    .header {
+      &__brand,
+      &__links__item:first-child {
         opacity: 0;
         visibility: hidden;
-        transition: opacity .5s ease;
-
+        transition: opacity 0.5s ease;
       }
     }
-
   }
 
   &__container {
@@ -30,6 +29,10 @@
     height: 100%;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+      padding: 8px 12px 4px 20px  ;
+    }
   }
 
   &__brand {
@@ -37,7 +40,12 @@
     width: 100%;
     margin: 4px;
     margin-left: 24px;
-    transition: opacity .5s ease;
+    transition: opacity 0.5s ease;
+
+    @media (max-width: 768px) {
+      max-width: 64px;
+      margin-left: 16px;
+    }
   }
 
   &__links {
@@ -46,7 +54,7 @@
 
     &__item {
       margin: 5px;
-      transition: opacity .5s ease;
+      transition: opacity 0.5s ease;
 
       .button--primary {
         text-decoration: none;
@@ -54,6 +62,14 @@
         background-color: variaveis.$CorBotaoAssinar;
         letter-spacing: 1px;
         height: 50px;
+
+        @media (max-width: 768px) {
+          margin-left: 16px;
+          font-size: 13px;
+          padding: 12px;
+          height: 40px;
+          letter-spacing: 0;
+        }
       }
 
       .button--secondary {
@@ -62,6 +78,13 @@
         background-color: variaveis.$CorBotaoEntrar;
         letter-spacing: 1px;
         height: 50px;
+
+        @media (max-width: 768px) {
+          font-size: 13px;
+          padding: 12px;
+          height: 40px;
+          letter-spacing: 0;
+        }
       }
     }
   }

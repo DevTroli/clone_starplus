@@ -1,6 +1,11 @@
 @use "variaveis.scss";
 .plans {
+  margin-top: -20px;
   padding: 5.5vw;
+
+  @media (max-width: 768px) {
+    padding: 5.6vw;
+  }
 
   .titleSize-big {
     text-align: center;
@@ -8,6 +13,14 @@
     padding: 8px;
     margin-top: 8px;
     margin-bottom: 24px;
+
+    @media (max-width: 768px) {
+      padding: 0px;
+      margin-top: 16px;
+      margin-bottom: 0px;
+      font-size: 24px;
+      line-height: 34px;
+    }
   }
 
   &_list {
@@ -18,8 +31,10 @@
     margin-bottom: 8px;
 
     @media(max-width: 768px) {
+      margin-top: 26Px;
       display: block;
       flex-direction: column;
+      justify-content: center;
     }
 
     .more_popular {
@@ -34,6 +49,11 @@
       max-width: 370px;
       width: 100%;
 
+      @media (max-width: 768px) {
+        max-width: 360px;
+        margin-bottom: 16px;
+      }
+
       img {
         max-height: 64px;
         max-width: 320px;
@@ -42,11 +62,20 @@
         margin-bottom: 32px;
         padding-top: 8px;
         margin-top: 48px;
+
+        @media (max-width: 768px) {
+          
+        }
       }
 
       .titleSize--small {
         display: block;
         font-size: variaveis.$titleSize--small;
+
+        @media (max-width: 768px) {
+          font-size: 22px;
+          line-height: 24px;
+        }
       }
 
       .textSize_mini {
@@ -56,11 +85,20 @@
         margin-bottom: 94px;
         text-align: center;
         padding-top: 4px;
+
+        @media (max-width: 768px) {
+          font-size: 16px;
+          padding-top: 0px;
+        }
       }
 
       button {
         width: 100%;
         margin-bottom: 48px;
+
+        @media (max-width: 768px) {
+          margin-bottom: 60px;
+        }
       }
     }
   }
@@ -87,6 +125,16 @@
     background-color: #7134ff;
     cursor: pointer;
     scale: 1.01;
+
+    @media (max-width: 768px) {
+      margin: 0 auto;
+      max-width: 30px;
+      width: 100%;
+      max-height: 100px;
+      font-size: 8px;
+      line-height: 0px;
+      border-radius: 2px;
+    }
   }
 }
 
@@ -98,4 +146,9 @@
   margin-top: 60px;
   margin-bottom: 20px;
   letter-spacing: 0.2px;
+
+  @media (max-width: 768px) {
+    margin-top: 0px;
+    margin-bottom: 48px;
+  }
 }

@@ -9,6 +9,11 @@
     color: variaveis.$CorTitulo;
     margin: auto;
     text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 23px;
+      line-height: 30px;
+    }
   }
 
   &__list {
@@ -33,6 +38,11 @@
       font-size: variaveis.$textSize--big;
       color: variaveis.$CorTexto;
       line-height: variaveis.$textSize--big + 10px;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 22px;
+      }
     }
 
     .titleSize--small {
@@ -40,6 +50,11 @@
       font-size: variaveis.$titleSize--small;
       line-height: variaveis.$titleSize--small + 10px;
       margin-bottom: 24px;
+
+      @media (max-width: 768px) {
+        font-size: 22px;
+        line-height: 30px;
+      }
     }
 
     img {

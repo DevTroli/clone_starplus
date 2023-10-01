@@ -7,12 +7,14 @@
   background-size: cover;
   padding: 5.6vw;
   justify-content: center;
-  margin-top: -72px;
+  margin-top: -50px;
 
   @media (max-width: 768px) {
     background-image: url(../images/responsividade/hero_mobile.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+    padding: 50vw 8vw 20vw 6vw;
+    min-height: 0vh;
   }
 
   
@@ -29,6 +31,22 @@
       height: 55px;
       margin: 0 auto;
       margin-bottom: 16px;
+
+      @media (max-width: 768px) {
+        text-align: center;
+        max-width:148px;
+        max-height: 48px;
+        margin-bottom: 8px;
+      }
+    }
+
+    @media (max-width: 768px) { 
+      max-width: 500px;
+      width: 100%;
+      margin-bottom: 100px;
+      margin-top: 0;
+      text-align: center;
+
     }
   }
 
@@ -37,6 +55,13 @@
     font-size: variaveis.$titleSize--small;
     line-height: variaveis.$titletSize + 10px;
     margin-bottom: 24px;
+
+    @media (max-width: 768px) {
+      font-size: 21px;
+      line-height: 30px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
   }
 
   .button__text {
@@ -61,6 +86,15 @@
       background-color: #7134ff;
       cursor: pointer;
     }
+
+    @media (max-width: 768px) {
+      display: block;
+      max-height: 50px;
+      max-width: 310px;
+      margin-bottom: 16px;
+
+      font-size: 16px;
+    }
   }
 
   .link__text {
@@ -68,13 +102,21 @@
     font-size: variaveis.$link_textSize;
     line-height: variaveis.$link_textSize + 10px;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 
   .hint {
     cursor: pointer;
     left: auto;
     padding: 8px;
-    margin-top: 32px;
+
+    @media (max-width: 768px) {
+  
+    }
 
     &-down {
       animation: bounce 1.75s infinite ease-in-out alternate;
