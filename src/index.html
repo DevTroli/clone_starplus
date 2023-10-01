@@ -24,6 +24,9 @@
     </header>
     <section>
       <div class="hero">
+        <picture>
+          <source media="(max-width: 768px) and (min-width: 1024px)" srcset="./images/responsividade/hero-tablet.jpg" />
+        </picture>
         <div class="hero__content">
           <div class="hero__content_brand">
             <img src="./images/logos/starPlus.svg" alt="Star+" />
@@ -100,7 +103,8 @@
         esportes ao vivo com a ESPN.
       </p>
       <picture class="more_popular">
-        <source media="(max-width: 768px)"  srcset="./images/responsividade/maisPopulares_starplus+.jpg" alt="Os mais populares Star+"/>
+        <source media="(max-width: 767px)"  srcset="./images/responsividade/maisPopulares_starplus+.jpg" alt="Os mais populares Star+"/>
+        <source media="(min-width: 768px)" srcset="./images/responsividade/maisPopulares_starplus+_tablet.jpg" alt="Os mais populares Star+"/>
         <img src="./images/maisPopulares.png" alt="Os mais populares Star+"/>
       </picture>
     </section>
@@ -116,9 +120,6 @@
     </section>
     <section>
       <div class="Simpsons ">
-        <picture class="Simpsons__img">
-          <source media="(max-width: 768px)"  srcset="./images/responsividade/simpsons_mobile.jpg" alt="Os Simpsons"/>
-        </picture>
         <div class="Simpsons__text__container">
           <h2 class="titleSize">
             Os Simpsons como você nunca viu. Sem Limites

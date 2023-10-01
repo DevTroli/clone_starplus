@@ -7,16 +7,30 @@
   background-size: cover;
   padding: 5.6vw;
   justify-content: center;
-  margin-top: -50px;
+  margin-top: -55px;
 
-  @media (max-width: 768px) {
+  
+  @media (max-width: 767px) {
     background-image: url(../images/responsividade/hero_mobile.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 50vw 8vw 20vw 6vw;
+    padding: 50vw 6vw 20vw 6vw;
     min-height: 0vh;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    background-image: url(../images/responsividade/hero_mobile.jpg);
+    background-position: top;
+    background-size: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    max-height: 716px;
+    height: 100%;
+    margin-top: -70px;
+    padding: 64px 36px;
+    padding-bottom: 16px;
+    
+  }
   
 
   .hero__content {
@@ -32,22 +46,42 @@
       margin: 0 auto;
       margin-bottom: 16px;
 
-      @media (max-width: 768px) {
+      @media screen and (min-width: 768px) and (max-height: 1024px) {
+        text-align: center;
+        max-width:148px;
+        max-height: 48px;
+        margin-bottom: 8px;
+      }
+
+      @media (max-width: 767px) {
         text-align: center;
         max-width:148px;
         max-height: 48px;
         margin-bottom: 8px;
       }
     }
+    
 
-    @media (max-width: 768px) { 
+    @media (max-width: 767px) { 
       max-width: 500px;
       width: 100%;
-      margin-bottom: 100px;
-      margin-top: 0;
+      margin-bottom: 70px;
+      margin-top: 32px;
       text-align: center;
 
     }
+
+    @media screen and (min-width: 768px) and (max-width:1024px) { 
+      max-width: 540px;
+      padding: 0;
+      margin-top: 256px;
+      padding-bottom: 80px;
+      text-align: center;
+      align-items: center;
+    }
+
+
+
   }
 
   .title--small {
@@ -56,12 +90,18 @@
     line-height: variaveis.$titletSize + 10px;
     margin-bottom: 24px;
 
-    @media (max-width: 768px) {
-      font-size: 21px;
-      line-height: 30px;
+    @media (max-width: 767px) {
+      font-size: 1px;
+      line-height: 26px;
       text-align: center;
       margin-bottom: 16px;
     }
+    @media (max-width: 768px) {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 16px;
+    }
+
   }
 
   .button__text {
@@ -87,14 +127,25 @@
       cursor: pointer;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       display: block;
       max-height: 50px;
-      max-width: 310px;
+      max-width: 364px;
       margin-bottom: 16px;
-
       font-size: 16px;
     }
+
+    @media screen and (min-width: 768px) and (max-height: 1024px) {
+      display: block;
+      max-height: 50px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      justify-content: center;
+      text-align: center;
+
+    }
+
+    
   }
 
   .link__text {
@@ -114,9 +165,7 @@
     left: auto;
     padding: 8px;
 
-    @media (max-width: 768px) {
-  
-    }
+
 
     &-down {
       animation: bounce 1.75s infinite ease-in-out alternate;
@@ -140,3 +189,4 @@
     }
   }
 }
+
