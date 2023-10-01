@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const saas = require('gulp-sass')(require('sass'));
 const imagemin = require('gulp-imagemin');
+const uglify = require('gulp-uglify');
 
 function styles() {
     return gulp.src('./src/style/main.scss')
@@ -12,7 +13,9 @@ function styles() {
 }
 function scripts() {
     return gulp.src('./src/scripts/*.js')
+        .pipe(uglify())
         .pipe(gulp.dest('./dist/scripts'));
+            
 }
 function HTML() {
     return gulp.src('./src/index.html')
