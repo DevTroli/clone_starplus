@@ -13,8 +13,7 @@ function styles() {
 function scripts() {
     return gulp.src('./scripts/*.js')
         .pipe(uglify())
-        .pipe(gulp.dest('./dist/scripts'));
-            
+        .pipe(gulp.dest('./dist/scripts'));          
 }
 function HTML() {
     return gulp.src('./index.html')
