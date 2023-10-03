@@ -15,14 +15,9 @@ function scripts() {
         .pipe(uglify())
         .pipe(gulp.dest('./dist/scripts'));          
 }
-function HTML() {
-    return gulp.src('./index.html')
-        .pipe(gulp.dest('./dist'));      
-}
 
-exports.sass = gulp.parallel(styles, scripts, HTML);
+exports.sass = gulp.parallel(styles, scripts);
 exports.watch = function() {
     gulp.watch('./style/*.scss', gulp.parallel(styles));
-    gulp.watch('./index.html', gulp.parallel(HTML));
     gulp.watch('./scripts/main.js', gulp.parallel(scripts)); 
 };
