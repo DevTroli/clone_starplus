@@ -6,7 +6,7 @@
   @media (max-width: 767px) {
     padding: 5.6vw;
   }
-  @media screen and (max-width: 768px) and (max-width: 1025px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
     padding: 5vw;
     padding-bottom: 1vw;
     margin-top: 48px;
@@ -27,7 +27,7 @@
       line-height: 34px;
     }
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
       padding: 0px;
       margin-top: 16px;
       margin-bottom: 0px;
@@ -49,7 +49,7 @@
       flex-direction: column;
       justify-content: center;
     }
-    @media screen and (min-width: 768px) and (max-width: 1025px) {
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
       margin-top: 26px;
       display: flex;
       flex-direction: column;
@@ -83,10 +83,6 @@
         margin-bottom: 32px;
         padding-top: 8px;
         margin-top: 48px;
-
-        @media (max-width: 768px) {
-          
-        }
       }
 
       .titleSize--small {
@@ -113,7 +109,7 @@
           margin-bottom: 32px;
         }
 
-        @media (max-width: 768px) {
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
           font-size: 18px;
           padding-top: 0px;
           margin-bottom: 32px;
@@ -176,7 +172,7 @@
     margin-top: 0px;
     margin-bottom: 64px;
   }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
     margin-top: 0px;
     margin-bottom: 0px;
   }
