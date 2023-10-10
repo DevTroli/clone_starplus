@@ -14,16 +14,19 @@
   line-height: variaveis.$titletSize + 10px;
   color: variaveis.$CorTitulo;
   margin-bottom: 18px;
+  text-align: start  !important;
 
   @media (max-width: 767px) {
     font-size: 20px;
     line-height: 30px;
     text-align: start;
+   
   }
-  @media (max-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
     font-size: 22px;
     line-height: 26px;
     text-align: start;
+    
   }
 
 }
